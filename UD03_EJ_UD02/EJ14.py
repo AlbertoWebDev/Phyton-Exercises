@@ -10,6 +10,7 @@ else:
         # Vamos a construir los espacios
         for j in range(i,altura):
             print(" ",end="")
+        # Vamos a construir los asteriscos
         for k in range(1,2*i):
             print("*",end="")
         print("")
