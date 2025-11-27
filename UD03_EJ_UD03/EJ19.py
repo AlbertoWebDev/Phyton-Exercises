@@ -1,7 +1,27 @@
-respuestasCorrectas = int(input("En el test de 10 preguntas, ¿Cuántas has acertado?"))
-respuestasIncorrectas = int(input("¿Cuántas has fallado?"))
-respuestasEnBlanco = int(input("¿Cuántas has dejado en blanco?"))
-if respuestasCorrectas + respuestasIncorrectas + respuestasEnBlanco != 10:
-    print("El total de respuestas no es correcto. Debe sumar 10.")
-if respuestasCorrectas < 0 or respuestasCorrectas > 10:
-    print("Número de respuestas no válido. Debe estar entre 0 y 10.")
+try:
+    correctas = int(input("Introduce el número de respuestas correctas: "))
+    incorrectas = int(input("Introduce el número de respuestas incorrectas: "))
+    en_blanco = int(input("Introduce el número de respuestas en blanco: "))
+
+    if correctas < 0 or incorrectas < 0 or en_blanco < 0:
+        print("Error: El número de respuestas no puede ser negativo.")
+        correctas = None
+    
+except ValueError:
+    print("Error: Asegúrate de introducir números enteros válidos.")
+
+else:
+    if correctas is not None:
+        puntos_correctas = correctas * 5
+
+        puntos_incorrectas = incorrectas * -1
+
+        puntos_blanco = en_blanco * 0
+        
+        nota_final = puntos_correctas + puntos_incorrectas + puntos_blanco
+
+        print("Puntos por respuestas correctas: " + str(puntos_correctas))
+        print("Puntos por respuestas incorrectas: " + str(puntos_incorrectas))
+        print("Puntos por respuestas en blanco: " + str(puntos_blanco))
+        print("La nota final obtenida por el estudiante es: " + str(nota_final) + " puntos.")
+
