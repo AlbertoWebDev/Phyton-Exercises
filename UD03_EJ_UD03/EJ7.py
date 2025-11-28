@@ -1,8 +1,16 @@
 try:
-    minutos = int(input("Ingrese los minutos que desea convertir: "))
+    minutos_totales = int(input("Introduce la cantidad de minutos: "))
+
+    if minutos_totales < 0:
+        print("Error: La cantidad de minutos debe ser un número positivo.")
+    else:
+        pass
 except ValueError:
-    print("Valor introducido no válido")
+    print("Error: El valor introducido no es un número entero válido.")
 else:
-    segundos = minutos * 60
-    horas = minutos / 60
-    print(str(minutos) + " minutos son " + str(segundos) + " segundos o " + str(horas) + " horas.")
+    horas = minutos_totales // 60
+
+    minutos = minutos_totales % 60
+
+    print("Minutos totales introducidos: " + str(minutos_totales))
+    print("Corresponde a: " + str(horas) + " horas y " + str(minutos) + " minutos.")

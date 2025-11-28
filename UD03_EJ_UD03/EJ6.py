@@ -2,8 +2,11 @@ try:
     num1 = float(input("Introduce el primer número: "))
     num2 = float(input("Introduce el segundo número: "))
     num3 = float(input("Introduce el tercer número: "))
-    media = (num1 + num2 + num3) / 3
 except ValueError:
-    print("Algún valor introducido no ha sido válido.")
+    print("Error: Asegúrate de introducir solo números válidos.")
 else:
-    print("La media de los tres números es:", media)
+    media = (num1 + num2 + num3) / 3.0
+    print("Primer número: " + str(num1))
+    print("Segundo número: " + str(num2))
+    print("Tercer número: " + str(num3))
+    print("La media es: " + str(media))
