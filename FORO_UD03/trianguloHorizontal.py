@@ -6,7 +6,7 @@ except ValueError:
     print("Error, la altura debe de ser numérica y mayor que Cero.")
 else:
 
-    print(" "*altura,end="")
+    print(" " * altura, end = "")
     print("*")
 
     for i in range(1,altura+1):
