@@ -6,8 +6,11 @@ except ValueError:
     print("Introduce un número entero positivo.")
     exit()
 else:
-    for i in range(altura):
-        linea = ""
-        for j in range(i + 1):
-            linea = linea + "*"
-        print(linea)
+    espacio = " "
+    asterisco = "*"
+    print(asterisco*(altura))
+    for i in range(1, altura//2):
+        print((espacio*(altura)) + asterisco + (espacio*(altura//2)))
+    print(asterisco*(altura*2))
+    for i in range(1, altura//2):
+        print((espacio*altura) + asterisco + (espacio*(altura//2)))

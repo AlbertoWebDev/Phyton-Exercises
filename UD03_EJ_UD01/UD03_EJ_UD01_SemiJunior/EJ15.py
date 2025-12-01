@@ -9,16 +9,16 @@ iguales = []
 
 if num1 == num2 == num3:
     iguales = [num1, num2, num3]
-    
+
 elif num1 == num2:
     iguales = [num1, num2]
-    
+
 elif num1 == num3:
     iguales = [num1, num3]
-    
+
 elif num2 == num3:
     iguales = [num2, num3]
-    
+
 print("El número mayor es:", mayor)
 print("El número menor es:", menor)
 

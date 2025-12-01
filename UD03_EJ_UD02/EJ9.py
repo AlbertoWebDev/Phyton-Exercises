@@ -10,7 +10,7 @@ except ValueError:
 
 if num == 0:
     print("No se ha leído ningún número.")
-    
+
 while num != 0:
     if num < 0:
         negativos = True
