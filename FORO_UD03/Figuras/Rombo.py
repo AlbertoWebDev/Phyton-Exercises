@@ -1,10 +1,10 @@
 try:
     n = int(input("Introduce el valor de n: "))
-    
+
 except ValueError:
     print("Por favor, introduce un número entero válido.")
     exit()
-else:    
+else:
 	if n > 0:
 		# Parte superior
 		for i in range(1, n + 1):

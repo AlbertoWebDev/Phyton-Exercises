@@ -17,6 +17,6 @@ else:
             print("El opuesto es: ", opuestos[1])
         elif dado == 6:
             print("El opuesto es: ", opuestos[0])
-        
+
     else:
         print("No has introducido un número entre 1 y 6.")

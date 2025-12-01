@@ -4,7 +4,7 @@ while True:
     except ValueError:
         print("Error, debes introducir un número entero.")
         continue
-    
+
     if n_primos > 0:
         break
     else:
@@ -17,9 +17,9 @@ numero_actual = 2  # Empezamos en el primer primo
 print("Los", n_primos, "primeros números primos son:")
 
 while numeros_encontrados < n_primos:
-    
+
     es_primo = True
-    
+
     if numero_actual <= 1:
         es_primo = False
     divisor = 2
@@ -32,5 +32,5 @@ while numeros_encontrados < n_primos:
     if es_primo:
         print(numero_actual)
         numeros_encontrados = numeros_encontrados + 1
-        
+
     numero_actual = numero_actual + 1
